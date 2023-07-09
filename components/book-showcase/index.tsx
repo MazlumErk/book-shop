@@ -37,7 +37,6 @@ export default function BookShowcase(props: BookShowcaseProps) {
   return (
     <div className="book-showcase">
       <Image className="book-image" src={books[bookIndex].bookImageUrl} alt={books[bookIndex].bookName} width={200} height={400}></Image>
-      {/* <img className="book-image" src={books[bookIndex].bookImageUrl} alt="" /> */}
       <div className="price">
         <div className="book-discount-price">
           ${books[bookIndex].bookDiscountPrice}

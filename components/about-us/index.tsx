@@ -4,14 +4,14 @@ export default function AboutUs() {
       {<p>
         Welcome to Book Shop, your ultimate destination for all book lovers! We
         are an online platform dedicated to providing a wide range of books to
-        satisfy your reading cravings. Whether you're a passionate reader, a
+        satisfy your reading cravings. Whether you&aposre a passionate reader, a
         student, or someone seeking knowledge, Book Shop has something special
         for everyone.
       </p>}
       {<p>
         At Book Shop, we believe in the power of books to inspire, educate, and
         entertain. We understand the joy of getting lost in a captivating story,
-        exploring new worlds, or delving into thought-provoking ideas. That's
+        exploring new worlds, or delving into thought-provoking ideas. That&aposs
         why we strive to curate a diverse collection of books that cater to
         various interests, genres, and age groups.
       </p>}
@@ -27,7 +27,7 @@ export default function AboutUs() {
         can browse our extensive catalog from the comfort of your home, office,
         or anywhere with an internet connection. Our user-friendly website
         allows you to search for books by title, author, genre, or keywords,
-        making it effortless to find exactly what you're looking for.
+        making it effortless to find exactly what you&aposre looking for.
       </p>}
       {<p>
         Customer satisfaction is our top priority. We take pride in providing

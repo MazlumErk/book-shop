@@ -14,7 +14,6 @@ export default function BookProducts(props: BookProductsProps) {
         <div className="product" key={index}>
           {item.bookName}
           <Image className="product-image" src={item.bookImageUrl} alt={item.bookName} width={100} height={100}></Image>
-          {/* <img className="product-image" src={item.bookImageUrl} alt={item.bookName} />  */}
         </div>
       ))}
     </div>
