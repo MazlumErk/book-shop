@@ -1,5 +1,7 @@
 // React
 import { useState } from "react";
+// Next
+import Image from 'next/image';
 // Components
 import BookSalesPercentage from "../book-sales-percentage";
 
@@ -34,7 +36,8 @@ export default function BookShowcase(props: BookShowcaseProps) {
   const { books } = props;
   return (
     <div className="book-showcase">
-      <img className="book-image" src={books[bookIndex].bookImageUrl} alt="" />
+      <Image className="book-image" src={books[bookIndex].bookImageUrl} alt={books[bookIndex].bookName} width={200} height={400}></Image>
+      {/* <img className="book-image" src={books[bookIndex].bookImageUrl} alt="" /> */}
       <div className="price">
         <div className="book-discount-price">
           ${books[bookIndex].bookDiscountPrice}

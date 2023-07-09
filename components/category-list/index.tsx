@@ -1,4 +1,6 @@
+// Component
 import ListButton from "../list-button";
+
 
 interface CategoryListProps {
   list: any[];
