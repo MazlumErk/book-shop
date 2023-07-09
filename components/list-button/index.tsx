@@ -5,10 +5,10 @@ interface ListButtonProps {
   label: string;
 }
 
-export default function LisrButton(props: ListButtonProps) {
+export default function ListButton(props: ListButtonProps) {
   const { href, label } = props;
   return (
-    <Link className="list-button" href={href}>
+    <Link className="list-button" href={href} >
       {label}
     </Link>
   );

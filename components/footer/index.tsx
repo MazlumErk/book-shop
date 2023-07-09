@@ -19,11 +19,12 @@ const contactList = [
 export default function Footer() {
   return (
     <footer className="footer">
-      {contactList.map((contact) => (
+      {contactList.map((contact, index) => (
         <ContactButton
           icon={contact.icon}
           link={contact.link}
           label={contact.label}
+          key={index}
         />
       ))}
     </footer>
