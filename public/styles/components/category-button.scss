@@ -1,0 +1,23 @@
+.category-button {
+  position: relative;
+  color: $color1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin: 0px 10px;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+
+    .category-list {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  a{
+    text-decoration: none;
+    color: $color1;
+  }
+}

@@ -1,0 +1,26 @@
+// Global styles
+@import "variables";
+
+// Pages
+@import 'pages/app';
+@import 'pages/home';
+
+// Components
+@import 'components/header';
+@import 'components/footer';
+@import 'components/logo';
+@import 'components/category-button';
+@import 'components/category-list';
+@import 'components/list-button';
+@import 'components/book-showcase';
+@import 'components/book-sales-percentage';
+@import 'components/book-products';
+@import 'components/contact-button';
+@import 'components/wrong-url-msg';
+@import 'components/about-us';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
