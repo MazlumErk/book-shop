@@ -9,14 +9,14 @@ const headerButtons = [
   },
   {
     label: "Pages",
-    href: "/home",
+    href: "",
     listItems: [
       { title: "Home", pages: [{ label: "Home", href: "/home" }] },
       {
         title: "Others",
         pages: [
           { label: "404", href: "/wrong-url" },
-          { label: "About Us", href: "about-us" },
+          { label: "About Us", href: "/about-us" },
         ],
       },
     ],
