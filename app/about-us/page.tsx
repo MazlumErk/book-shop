@@ -1,5 +1,6 @@
 "use client";
 
+import AboutUs from "@/components/about-us";
 // Components
 import Footer from "@/components/footer";
 import Header from "@/components/header";
@@ -11,6 +12,7 @@ export default function Home() {
     <div className="home">
         <Header />
         <Logo className="logo-dark"/>
+        <AboutUs />
         <Footer />
     </div>
   );
