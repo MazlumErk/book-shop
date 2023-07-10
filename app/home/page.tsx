@@ -1,10 +1,13 @@
 "use client";
+// React
+import { useState } from "react";
 
 // Components
 import BookProducts from "@/components/book-products";
 import BookShowcase from "@/components/book-showcase";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
+
 
 // Book List
 const bookList = [
@@ -444,11 +447,13 @@ const bookList = [
 
 
 export default function Home() {
+  // state
+  const [selectedBook, setSelectedBook] = useState(0);
   return (
     <div className="home">
         <Header />
-        <BookShowcase books={bookList}/>
-        <BookProducts books={bookList}/>
+        <BookShowcase books={bookList} selectedBook={selectedBook} setSelectedBook={setSelectedBook}/>
+        <BookProducts books={bookList} setSelectedBook={setSelectedBook}/>
         <Footer />
     </div>
   );

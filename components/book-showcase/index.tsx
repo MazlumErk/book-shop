@@ -9,6 +9,8 @@ import BookSalesPercentage from "../book-sales-percentage";
 
 interface BookShowcaseProps {
   books: any[];
+  selectedBook: number;
+  setSelectedBook: any;
 }
 
 function dateCounter(bookDiscountEndDate: string) {
@@ -34,38 +36,37 @@ function dateCounter(bookDiscountEndDate: string) {
 }
 
 export default function BookShowcase(props: BookShowcaseProps) {
-  const [bookIndex, setbookIndex] = useState(0);
-  const { books } = props;
+  const { books, selectedBook, setSelectedBook } = props;
   return (
     <div className="book-showcase">
-      <Image className="book-image" src={books[bookIndex].bookImageUrl} alt={books[bookIndex].bookName} width={200} height={400}></Image>
+      <Image className="book-image" src={books[selectedBook].bookImageUrl} alt={books[selectedBook].bookName} width={200} height={400}></Image>
       <div className="price">
         <div className="book-discount-price">
-          ${books[bookIndex].bookDiscountPrice}
-          <div>${books[bookIndex].bookPrice}</div>
+          ${books[selectedBook].bookDiscountPrice}
+          <div>${books[selectedBook].bookPrice}</div>
         </div>
         <div className="discount-ent-time-message">
           Hurry Up! <div>Offer ends in:</div>
         </div>
         {dateCounter(books[0].bookDiscountEndDate)}
         <div className="book-storage">
-          Already Sold: {books[bookIndex].selledBookCount} Available:{" "}
-          {books[bookIndex].bookCount}
+          Already Sold: {books[selectedBook].selledBookCount} Available:{" "}
+          {books[selectedBook].bookCount}
         </div>
         <BookSalesPercentage
-          totalBookCount={books[bookIndex].totalBookCount}
-          availableBookCount={books[bookIndex].bookCount}
+          totalBookCount={books[selectedBook].totalBookCount}
+          availableBookCount={books[selectedBook].bookCount}
         />
       </div>
       <div className="ad">
-        <h1 className="book-name">{books[bookIndex].bookName}</h1>
+        <h1 className="book-name">{books[selectedBook].bookName}</h1>
         <button className="buy-button">Buy Now</button>
       </div>
       <button
         className="navigate-next-book"
         onClick={() => {
-          bookIndex >= books.length - 1 && setbookIndex(0);
-          bookIndex < books.length - 1 && setbookIndex(bookIndex + 1);
+          selectedBook >= books.length - 1 && setSelectedBook(0);
+          selectedBook < books.length - 1 && setSelectedBook(selectedBook + 1);
         }}
       >
         {`>`}
@@ -73,8 +74,8 @@ export default function BookShowcase(props: BookShowcaseProps) {
       <button
         className="navigate-previous-book"
         onClick={() => {
-          bookIndex <= 0 && setbookIndex(books.length - 1);
-          bookIndex > 0 && setbookIndex(bookIndex - 1);
+          selectedBook <= 0 && setSelectedBook(books.length - 1);
+          selectedBook > 0 && setSelectedBook(selectedBook - 1);
         }}
       >
         {`<`}
