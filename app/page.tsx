@@ -1,6 +1,9 @@
-import Home from './home/page'
+"use client";
 
-export default function App() {
+import Home from "@home/page";
+
+
+export default function Index() {
   return (
     <main className='app'>
       <Home />

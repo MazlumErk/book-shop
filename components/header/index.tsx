@@ -1,3 +1,5 @@
+"use client";
+
 import CategoryButton from "../category-button";
 import Logo from "../logo";
 

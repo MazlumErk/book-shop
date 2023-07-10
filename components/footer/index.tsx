@@ -1,3 +1,5 @@
+"use client";
+
 // Icons
 import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
 import ContactButton from "../contact-button";

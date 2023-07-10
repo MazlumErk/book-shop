@@ -1,3 +1,5 @@
+"use client";
+
 // Next
 import 'next/image'
 import Image from 'next/image';

@@ -1,3 +1,5 @@
+"use client";
+
 // Component
 import ListButton from "../list-button";
 
